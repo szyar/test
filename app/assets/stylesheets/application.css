@@ -23,27 +23,34 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  width: 100%;
 }
 
 .container {
   height: 100vh;
 }
 
-div#post_list {
-  display: flex;
-  text-align: center;
-  justify-content: center;
+/* Notice Message */
+#notice {
+  background: #ccc;
+  padding: .5rem;
+  width: 30%;
+  margin: 1rem auto;
 }
 
+/* Table */
 table.table {
   border-collapse: collapse;
+  border-color: grey;
   width: 70%;
-  margin: 1.2rem;
+  margin: 30px auto;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
 }
 
 th {
-  background-color: #3691da;
+  background-color: #ccc;
 }
 
 th,
@@ -51,65 +58,73 @@ td {
   padding: 12px 12px;
 }
 
-td {
-  text-align: left;
-}
-
 tr:hover {
-  background-color: #8ab4a9;
+  background-color: #f5f5f5;
 }
 
-tr {
-  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
-}
-
-td.action {
-  text-align: right;
-  width: 15%;
-}
-
+/* links */
 a {
   text-decoration: none;
   color: #000;
 }
 
 a:hover {
-  color: #154360;
+  color: gray;
 }
 
-.btn a {
-  text-align: center;
-  padding: 1rem 3rem;
-  background-color: #3691da;
-  color: #fdfefe;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
+/* form & inputs */
+form {
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
 }
-
-.btn a:hover {
-  color: #154360;
-}
-
-.post {
-  margin: 1.5rem;
+input, textarea {
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
   padding: 10px;
+  border: 1px solid #eee;
+}
+textarea {
+  height: 160px;
+}
+label {
+  display: inline-block;
+  margin-top: 30px;
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
-input[type="submit"] {
-  margin-top: -1rem;
-  margin-bottom: 2rem;
-  margin-right: 2.5rem;
-  width: 7rem;
-  padding: 1rem 0.5rem;
-  background-color: #3691da;
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-}
-
-input[type="submit"]:hover {
-  color: #154360;
+/* buttons */
+.btn {
   cursor: pointer;
+  margin-top: 30px;
+  background: #ff8800;
+  outline: none;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  color: white;
+  background: #ff9720;
+}
+
+/* card  */
+.card {
+  margin: 30px auto;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 0 1rem;
+  box-shadow: 0 0.125em 0.25em rgba(10,10,10,.1);
+}
+
+.card-header {
+  font-weight: 700;
+  padding: 0 1rem;
+  border-bottom: 1px solid #ddd;
 }

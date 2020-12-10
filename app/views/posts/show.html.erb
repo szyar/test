@@ -1,14 +1,21 @@
-<p id="notice"><%= notice %></p>
-<h2>Showing post details</h2>
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<% if notice %>
+  <p id="notice"><%= notice %></p>
+<% end %>
 
-<p>
-  <strong>Content:</strong>
-  <%= @post.body %>
-</p>
+<h2>Post Details</h2>
+
+<div class="card">
+  <div class="card-header">
+    <p>
+      <%= @post.title %>
+    </p>
+  </div>
+
+  <p>
+    <%= @post.body %>
+  </p>
+
+</div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
