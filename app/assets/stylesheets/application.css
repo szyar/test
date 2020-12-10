@@ -13,3 +13,103 @@
  *= require_tree .
  *= require_self
  */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  height: 100vh;
+}
+
+div#post_list {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+table.table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 1.2rem;
+}
+
+th {
+  background-color: #3691da;
+}
+
+th,
+td {
+  padding: 12px 12px;
+}
+
+td {
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #8ab4a9;
+}
+
+tr {
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+td.action {
+  text-align: right;
+  width: 15%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #154360;
+}
+
+.btn a {
+  text-align: center;
+  padding: 1rem 3rem;
+  background-color: #3691da;
+  color: #fdfefe;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn a:hover {
+  color: #154360;
+}
+
+.post {
+  margin: 1.5rem;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  margin-right: 2.5rem;
+  width: 7rem;
+  padding: 1rem 0.5rem;
+  background-color: #3691da;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  color: #154360;
+  cursor: pointer;
+}
